@@ -1,0 +1,88 @@
+.menu-wrapper {
+  position: absolute;
+   background-color: aqua;
+  padding: 2px;
+  border-radius: 6px;
+  margin-left: 10px;
+  border: double black 6px;
+  right: 28px;
+  top: 30px;
+}
+
+.menu-wrapper button {
+ border: none;
+   background-color: aqua;
+   padding-inline: 20px;
+   /* outline: none; */
+
+}
+
+
+.dropdown {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  padding: 10px;
+  right: 10px;
+  z-index: 100;
+  color: black;
+  border: red solid 1px;
+}
+
+
+@media(max-width: 700px){
+ .dropdown {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  padding: 10px;
+  right: 10px;
+  top: 28px;
+  z-index: 100;
+  color: black;
+  border: red solid 1px;
+}
+
+.menu-wrapper button {
+ border: none;
+   background-color: aqua;
+   padding-inline: 16px;
+   cursor: pointer;
+   /* outline: none; */
+
+}
+}
+
+@media(max-width: 415px){
+ .dropdown {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  padding: 4px;
+  right: 4px;
+  z-index: 100;
+  color: black;
+  border: red solid 1px;
+}
+
+.menu-wrapper button {
+ border: none;
+   background-color: aqua;
+   padding-inline: 4px;
+   /* outline: none; */
+
+}
+}
+.dropdown div {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-bottom: solid 1px;
+}
+.dropdown div:hover {
+  background: #f0f0f0;
+}
+
+
