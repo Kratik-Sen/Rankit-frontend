@@ -6,4 +6,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+/* Tablet styles (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .desc {
+    font-size: 32px;
+    height: auto;
+    min-height: 35px;
+    margin-top: 15px;
+    padding: 0 15px;
+  }
+}
+
+/* Mobile styles (481px - 767px) */
+@media (max-width: 767px) and (min-width: 481px) {
+  .desc {
+    font-size: 24px;
+    height: auto;
+    min-height: 30px;
+    margin-top: 12px;
+    padding: 0 10px;
+  }
+}
+
+/* Small mobile styles (up to 480px) */
+@media (max-width: 480px) {
+  .desc {
+    font-size: 18px;
+    height: auto;
+    min-height: 25px;
+    margin-top: 10px;
+    padding: 0 8px;
+    line-height: 1.3;
+  }
+}
+
+/* Extra small mobile styles (up to 360px) */
+@media (max-width: 360px) {
+  .desc {
+    font-size: 16px;
+    margin-top: 8px;
+    padding: 0 5px;
+    line-height: 1.2;
+  }
 }

@@ -3,9 +3,32 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  width: 100%;
+  box-sizing: border-box;
   .best{
 margin-inline: auto;
 }
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) and (min-width: 768px) {
+  #root {
+    padding: 1.5rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  #root {
+    padding: 1rem;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+  #root {
+    padding: 0.5rem;
+  }
 }
 
 .logo {

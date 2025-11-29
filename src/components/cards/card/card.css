@@ -3,6 +3,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex: 0 1 auto;
+    min-width: 0;
 }
 
 .card img{
@@ -12,52 +14,75 @@
     object-fit: cover;
     cursor: pointer;
     border: 1.5px solid black;
+    max-width: 100%;
 }
 
 .name{
     font-size: 20px;
     font-weight: 500;
+    text-align: center;
+    word-wrap: break-word;
 }
 
-@media(max-width: 700px){
-   .card img{
-    height: 300px;
-    width: 200px;
-    margin: 20px;
-    object-fit: cover;
-    
-}
+/* Tablet styles (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .card img {
+    height: auto;
+    width: 100%;
+    max-width: 280px;
+    margin: 15px 10px;
+    aspect-ratio: 3/4;
+  }
+  
+  .name {
+    font-size: 18px;
+  }
 }
 
+/* Mobile styles (481px - 767px) */
+@media (max-width: 767px) and (min-width: 481px) {
+  .card img {
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px 5px;
+    aspect-ratio: 3/4;
+  }
+  
+  .name {
+    font-size: 16px;
+  }
+}
 
-@media(max-width: 500px){
-  .card img{
-    height: 250px;
-    width: 180px;
-    margin: 20px;
-    object-fit: cover;
-    
-}}
-@media(max-width: 466px){
-  .card img{
-    height: 230px;
-    width: 170px;
-    margin: 20px;
-    object-fit: cover;
-    
-}}
-@media(max-width: 430px){
-  .card img{
-    height: 200px;
-    width: 140px;
-    margin: 20px;
-    object-fit: cover;
-    
-}}
+/* Small mobile styles (up to 480px) */
+@media (max-width: 480px) {
+  .card img {
+    height: auto;
+    width: 100%;
+    max-width: 150px;
+    margin: 8px 3px;
+    aspect-ratio: 3/4;
+  }
+  
+  .name {
+    font-size: 14px;
+  }
+}
+
+/* Extra small mobile styles (up to 360px) */
+@media (max-width: 360px) {
+  .card img {
+    max-width: 130px;
+    margin: 5px 2px;
+  }
+  
+  .name {
+    font-size: 12px;
+  }
+}
 
 
 body.dark {
-
   .card img{
     height: 400px;
     width: 300px;
@@ -65,11 +90,52 @@ body.dark {
     object-fit: cover;
     cursor: pointer;
     border: 3px double red;
-}
+    max-width: 100%;
+  }
+  
   .card img:hover{
     border: 3px double yellow;
-    
   }
-
+  
+  /* Tablet styles for dark mode */
+  @media (max-width: 1024px) and (min-width: 768px) {
+    .card img {
+      height: auto;
+      width: 100%;
+      max-width: 280px;
+      margin: 15px 10px;
+      aspect-ratio: 3/4;
+    }
+  }
+  
+  /* Mobile styles for dark mode */
+  @media (max-width: 767px) and (min-width: 481px) {
+    .card img {
+      height: auto;
+      width: 100%;
+      max-width: 200px;
+      margin: 10px 5px;
+      aspect-ratio: 3/4;
+    }
+  }
+  
+  /* Small mobile styles for dark mode */
+  @media (max-width: 480px) {
+    .card img {
+      height: auto;
+      width: 100%;
+      max-width: 150px;
+      margin: 8px 3px;
+      aspect-ratio: 3/4;
+    }
+  }
+  
+  /* Extra small mobile styles for dark mode */
+  @media (max-width: 360px) {
+    .card img {
+      max-width: 130px;
+      margin: 5px 2px;
+    }
+  }
 }
 
